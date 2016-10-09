@@ -139,7 +139,6 @@ float会紧紧包裹内容，但是为了让偏移元素撑开包含元素，偏
 
 `overflow`是用于父元素上解决`float`或者`position:absolute`无法撑开父元素用的，居中的情景下需要的是包含元素同子元素宽度相等，但是不设置`float`和`absolute`包裹偏移元素会使包含元素宽度自适应父元素的宽度，而不是偏移元素动态的宽度；
 
-<<<<<<< HEAD
 **overflow: hidden**      
 
 <img src="content/oHidden.png" />
