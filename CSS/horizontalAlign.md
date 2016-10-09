@@ -69,7 +69,8 @@
 
 具体实现：使包含元素偏移之前父元素的50%，然后偏移元素偏移包含元素的50%（前提是偏移元素和包含元素的宽度相等），就可以达到居中效果了。    
 
-<img src="content/unkownWidth.png" />
+<img src="content/unkownWidth.png" />           
+
 **那么，问题来了，如何使包含元素宽度等于偏移元素的宽度？**     
 
 **其实就是包裹性!**   
@@ -119,10 +120,10 @@ float会紧紧包裹内容，但是为了让偏移元素撑开包含元素，偏
 </pre>
 此时偏移元素的`left`不能换成`margin-left`，因为`margin-left`会使偏移元素左侧扩展，但包含元素宽度不变，使用负的`margin`都会进行扩展。     
 
-**margin-left: -50%**
+**margin-left: -50%**     
 <img src="content/marginExtend.png" />       
 
-**margin: -50%**
+**margin: -50%**     
 <img src="content/marginExtendAll.png" />    
 
 再次使用**包裹性**可以防止扩展，可给偏移元素也设置`float`，但是不能设置`absolute`，因为使用绝对定位后包含元素无法撑开，百分比就失效了(包含元素的`position`设置非`static` 时会为0，否则为最近的非`static`的祖先的width的百分比)
