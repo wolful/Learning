@@ -143,5 +143,6 @@ float会紧紧包裹内容，但是为了让偏移元素撑开包含元素，偏
 
 <img src="content/oHidden.png" />
 
-**总结** 
+**总结**     
+
 <img src="content/horiAlignMind.png" />
